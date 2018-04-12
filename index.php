@@ -11,7 +11,7 @@
     <title>MazeBank</title>
   </head>
   <body>
-    <h1>Système bancaire RP GTA</h1>
+    <h1>Système bancaire pour jeu RP.</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

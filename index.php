@@ -11,6 +11,7 @@
   </head>
   <body>
   <?php include("include/entete.php"); ?>
+  <?php include("include/test.php"); ?>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

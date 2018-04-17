@@ -1,11 +1,33 @@
-body, nav {
-    background-image: linear-gradient(to right, black, red, black);
+html, body {
+  background-color: rgb(232, 232, 232);
+  background-image: url("../img/fondmaze.png");
+  background-attachment: fixed;  
+  height: 100%;
 }
 hr {
-  height: 1px;
-  color: white;
-  background-color: white;
+  height: 2px;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(0, 0, 0);
 }
-.test {
-	color: whitesmoke;
+.navbar .navbar-nav .dropdown .dropdown-menu a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+}
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.fondlogo {
+  background-color: rgb(232, 232, 232);
+}
+.fondblanc {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border-right: 1px;
+  border-right-color: rgb(0, 0, 0);
+  border-left: 1px;
+  border-left-color: rgb(0, 0, 0);
+  min-height: 100vh;
 }

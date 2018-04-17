@@ -11,8 +11,15 @@
   </head>
   <body>
   <?php include("include/entete.php"); ?>
-  <?php include("include/test.php"); ?>
-    
+  <div class="container-fluid justify-content-center align-items-center">
+    <div class="row">
+      <div class="col-8 fondblanc justify-content-center">
+        <?php include("include/connect.php"); ?>
+        <?php include("include/test.php"); ?>        
+      </div>
+    </div>
+  </div>
+  <?php include("include/piedpage.php"); ?>  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>

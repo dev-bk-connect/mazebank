@@ -1,3 +1,15 @@
+<?php
+session_start(); // Démarrage d'une session
+
+include("include/fonctions.php");
+
+if (isset($_GET['go'])){
+  $page=$_GET['go'].".php"; // récupération de l'url modifiée
+}
+else {
+  $page="connect.php";  // page par défault du site
+}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,11 +23,11 @@
   </head>
   <body>
   <?php include("include/entete.php"); ?>
-  <div class="container-fluid justify-content-center align-items-center">
-    <div class="row">
-      <div class="col-8 fondblanc justify-content-center">
-        <?php include("include/connect.php"); ?>
-        <?php include("include/test.php"); ?>        
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-8 fondblanc">
+      <br>
+        <?php include("include/".$page); ?>
       </div>
     </div>
   </div>

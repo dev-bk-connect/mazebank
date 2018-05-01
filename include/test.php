@@ -1,6 +1,4 @@
 <?php
-$a = 10000;
-$b = 200;
-$c = -400;
-echo($a+$b+$c);
+$_SESSION['psn']="Bigbab_10";
+$_SESSION['solde']=548965;
 ?>

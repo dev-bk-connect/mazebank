@@ -1,0 +1,1 @@
+<div class="container w-75 text-center border rounded border-danger">Bienvenue <?php echo $_SESSION['psn']; ?></div>

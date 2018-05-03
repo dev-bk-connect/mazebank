@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarMenu2">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="http://commu.bk-connect.fr">C.O.M.M.U.</a>
+        <a class="nav-link" href="http://commu.bk-connect.fr" target="blank">C.O.M.M.U.</a>
       </li>
     </ul>
   </div>

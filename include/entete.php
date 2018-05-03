@@ -1,6 +1,11 @@
-<div class="container-fluid fondlogo"><a href="http://mazebank"><img class="img-fluid" src="img/logo-mazebank.png" width="438" height="88" alt="Maze Bank"></a></div>
+<div class="container-fluid fondlogo"><a href="<?php if(isset($_SESSION['psn'])){ cheminpage("accueil");} else { cheminpage(null);}?>"><img class="img-fluid" src="img/logo-mazebank.png" width="438" height="88" alt="Maze Bank"></a></div>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: linear-gradient(rgb(255, 0, 0), rgb(192, 0, 0));">
-  <span class="navbar-brand"><?php if (isset($_SESSION['psn'])){ echo $_SESSION['psn'];} ?></span><span class="navbar-text navbar-center" style="color:white;margin-right:10px;"><?php if (isset($_SESSION['solde'])){ echo "&nbsp;Solde : ".$_SESSION['solde']."&nbsp;\$";} ?></span>
+  <?php
+  if ($page != "deconnect.php"){
+    if (isset($_SESSION['psn'])){ echo "<span class=\"navbar-brand\">".$_SESSION['psn']."</span>";}
+    if (isset($_SESSION['solde'])){ echo "<span class=\"navbar-text navbar-center\" style=\"color:white;margin-right:10px;\">&nbsp;Solde : ".$_SESSION['solde']."&nbsp;\$</span>";}
+  }
+  ?>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu1" aria-controls="navbarMenu1" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,6 +23,13 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php cheminpage("historique"); ?>">Historique</a>
       </li>
+      <?php if ($page != "deconnect.php"){
+        if (isset($_SESSION['psn'])){
+          echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"";
+          cheminpage("deconnect");
+          echo "\">Déconnexion</a></li>";
+        }
+      } ?>
     </ul>
   </div>
 </nav>

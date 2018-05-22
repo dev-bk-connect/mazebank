@@ -4,7 +4,7 @@ session_start(); // Démarrage d'une session
 include("include/fonctions.php");
 
 if (isset($_GET['go'])){
-  $page=$_GET['go'].".php"; // récupération de l'url modifiée
+    $page=$_GET['go'].".php"; // récupération de l'url modifiée
 }
 else {
   $page="connect.php";  // page par défault du site

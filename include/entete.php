@@ -2,7 +2,9 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background: linear-gradient(rgb(255, 0, 0), rgb(192, 0, 0));">
   <?php
   if ($page != "deconnect.php"){
-    if (isset($_SESSION['psn'])){ echo "<span class=\"navbar-brand\">".$_SESSION['psn']."</span>";}
+    if (isset($_SESSION['psn'])){ ?>
+      <a class="navbar-brand" href="<?php cheminpage("accueil"); ?>"><?php echo $_SESSION['psn']; ?></a>
+      <?php } 
     if (isset($_SESSION['solde'])){ echo "<span class=\"navbar-text navbar-center\" style=\"color:white;margin-right:10px;\">&nbsp;Solde : ".$_SESSION['solde']."&nbsp;\$</span>";}
   }
   ?>
@@ -11,17 +13,17 @@
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarMenu1">
     <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="<?php cheminpage("historique"); ?>">Historique</a>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Services
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="<?php cheminpage("virement"); ?>">Virement</a>
-          <a class="dropdown-item" href="<?php cheminpage("declaration"); ?>">Déclaration</a>
+          <a class="dropdown-item" href="<?php cheminpage("salaire"); ?>">Salaire</a>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php cheminpage("historique"); ?>">Historique</a>
       </li>
       <?php if ($page != "deconnect.php"){
         if (isset($_SESSION['psn'])){

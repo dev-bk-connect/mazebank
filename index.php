@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set("Europe/Paris"); // Définition du fuseau horaire.
+
 session_start(); // Démarrage d'une session
 
 include("include/fonctions.php");

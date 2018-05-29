@@ -13,7 +13,7 @@ if (isset($_POST['psn'])){
             <p>Comment puis-je vous servir ?</p>
         </div>
     </div>    
-        test de phrase
+    <p>Nous sommes le <?php echo date("Y-m-d H:i:s"); ?></p>
 <?php } else {
     header("Refresh: 5;"); ?>
 <div class="container w-75 text-center border rounded border-danger">Tu ne devrais pas voir cette page, espèce de non-connecté !</div>

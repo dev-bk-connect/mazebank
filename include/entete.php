@@ -3,7 +3,7 @@
   <?php
   if ($page != "deconnect.php"){
     if (isset($_SESSION['psn'])){ ?>
-      <a class="navbar-brand" href="<?php cheminpage("accueil"); ?>"><?php echo $_SESSION['psn']; ?></a>
+      <a class="navbar-brand" href="<?php cheminpage("accueil"); ?>"><?php echo $_SESSION['prenom']." ".$_SESSION['nom']." (".$_SESSION['psn'].")"; ?></a>
       <?php } 
     if (isset($_SESSION['solde'])){ echo "<span class=\"navbar-text navbar-center\" style=\"color:white;margin-right:10px;\">&nbsp;Solde : ".$_SESSION['solde']."&nbsp;\$</span>";}
   }

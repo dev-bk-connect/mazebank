@@ -17,9 +17,9 @@
         <input type="password" name="code3" class="form-control input-lg mb-1 text-center border border-danger" maxlength="1" size="1" placeholder="d" id="code3" onKeyUp="suivant(this,'#code4', 1)" required>
     </div>
     <div class="col-auto">
-        <input type="password" name="code4" class="form-control input-lg mb-1 text-center border border-danger" maxlength="1" size="1" placeholder="e" id="code4" required>
+        <input type="password" name="code4" class="form-control input-lg mb-1 text-center border border-danger" maxlength="1" size="1" placeholder="e" id="code4" onKeyUp="suivant(this,'#envoyer', 1)" required>
     </div>
 </div></p>
 <p>Veuillez entrer votre identifiant ainsi que votre code pour vous connecter.</p>
-<p><button type="submit" class="btn btn-danger">connexion</button></p>
+<p><button type="submit" name="envoyer" class="btn btn-danger">connexion</button></p>
 </form></div>
